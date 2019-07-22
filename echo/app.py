@@ -26,7 +26,7 @@ def echo(path):
 
     print(f"{divider}\n\n")
 
-    return jsonify(
+    response = jsonify(
         {
             "endpoint": path,
             "data": request.data.decode("utf-8"),

@@ -3,7 +3,6 @@ FROM python:3.7
 RUN apt-get update && apt-get install -y \
   nginx-extras
 
-COPY ./nginx /etc/nginx/sites-enabled/
 RUN rm /etc/nginx/sites-enabled/default
 
 COPY ./echo /opt/echo
